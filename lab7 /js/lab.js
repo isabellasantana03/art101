@@ -26,4 +26,14 @@ function sortUserName(){
 document.writeln("Oh hey, I've fixed your name:",
     sortUserName(),"</br>");
 
-//
+//bonus code for Task X
+//Ignore/Omit Spaces 
+//Function should remove all spaces using a regular expression before sorting the characters of the name 
+function sortNameIgnoringSpaces(userName) {
+    var cleanedName = username.replace(/\s/g, '').split('').sort().join('');
+    return cleanedName;
+}
+
+var userName = window.pompt ("Enter your name");
+var results = sortNameIgnoringSpaces (userName);
+console.log("Sorted name without spaces:", result);
