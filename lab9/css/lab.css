@@ -30,3 +30,9 @@ h1{
       border: solid 1px #888;
       background-color: #ddb5ee;
     }
+    .special {
+        background-color: lavender;
+        border: dotted 50px red;
+        color: pink;
+        font-weight: bold;
+    }
