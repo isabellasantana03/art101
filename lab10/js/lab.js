@@ -1,5 +1,5 @@
 /*
-    lab.js - Thissimple JS/jQuery script appends new elements to an output div
+    lab.js - This simple JS/jQuery script appends new elements to an output div
     Requirements: jQuery must be loaded for this script to work.
 
 Author: Isabella Santana 
@@ -17,12 +17,22 @@ function generateRandomText() {
     return text.slice(randStart, randStart + randLen);
   }
 
+$(document).ready(function(){
+    $("#make_convo").click(function(){
+        const newText = generateRandomText();
+        const outputDivs = $("#output.text");
+        const newClass = (outputDivs.Length % 2 === 0) ? 'text-left':'text-right';
+        $("#output").append('<div class = "text'+ newClass +' "><p>'+ newText + '</p></div>');
+    });
+});
+
 //click listener for button 
 $("#make-convo").click(function(){
-});
 
 //get new fake dialogue
 const newText=generateRandomText();
 
+
 //append a new div to our output div 
 $("#output").append('<div class="text"><p>'+ newText + '</p></div>');
+});

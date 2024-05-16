@@ -5,14 +5,33 @@
     background-color: #a386e6;
   }
 
-text p {
-    display: inline-block;
+
+/*Light beige background*/
+#output {
+    background-color: #ecead5;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+text  {
     max-width: 60%;
     margin: 3px;
-    padding: 5px 10px;
-    border-radius: 15px;
-    background-color: darkgray;
-    color: white;
-    font-family: sans-serif;
-    font-size: 0.8em;
+    padding: 10px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    color: black;
   }
+
+/*Grey Bubble*/
+.text-left{
+    background-color: #751414;
+    align-self: flex-start;
+}
+
+/*Green Bubble*/
+.text-right{
+    background-color: #90ee90;
+    align-self: flex-end;
+}
