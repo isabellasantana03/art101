@@ -18,21 +18,11 @@ function generateRandomText() {
   }
 
 $(document).ready(function(){
-    $("#make_convo").click(function(){
+    $("#make_convo").click(function() {
         const newText = generateRandomText();
         const outputDivs = $("#output.text");
-        const newClass = (outputDivs.Length % 2 === 0) ? 'text-left':'text-right';
-        $("#output").append('<div class = "text'+ newClass +' "><p>'+ newText + '</p></div>');
+        const newClass = (outputDivs.length % 2 === 0) ? 'text-left' : 'text-right';
+        $("#output").append('<div class = "text ' + newClass + '"><p>' + newText + '</p></div>');
     });
 });
 
-//click listener for button 
-$("#make-convo").click(function(){
-
-//get new fake dialogue
-const newText=generateRandomText();
-
-
-//append a new div to our output div 
-$("#output").append('<div class="text"><p>'+ newText + '</p></div>');
-});

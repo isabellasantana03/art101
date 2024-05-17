@@ -15,9 +15,9 @@
     flex-direction: column;
 }
 
-text  {
+.text  {
     max-width: 60%;
-    margin: 3px;
+    margin: 10px 0;
     padding: 10px;
     border-radius: 10px;
     word-wrap: break-word;
@@ -26,12 +26,12 @@ text  {
 
 /*Grey Bubble*/
 .text-left{
-    background-color: #751414;
-    align-self: flex-start;
+    background-color: #4b4848;
+    align-self: flex-start; /*Align to the left*/
 }
 
 /*Green Bubble*/
 .text-right{
     background-color: #90ee90;
-    align-self: flex-end;
+    align-self: flex-end; /*Align to the right*/
 }
