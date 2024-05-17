@@ -1,12 +1,13 @@
-/* this css file will only style the homepage of our site */
-/* Here we can set styles for this lab page that we don't want to effect others pages */
-h1{
+/* This CSS file will only style the homepage of our site */
+/* Here we can set styles for this lab page that we don't want to affect other pages */
+
+h1 {
   color: #6e296e;
   font-size: 200%;
 }
 
-p{
-  font-family:"Times New Roman', Times, serif";
+p {
+  font-family: "Times New Roman", Times, serif; /* Fixed the quotation marks */
   text-indent: 20px;
   margin-left: 10px;
 }
@@ -19,20 +20,19 @@ p{
   margin: 10px;
   border: solid 1px;
   font-size: 20px;
-  } 
+}
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+/* The period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-  
-
-
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #ddb5ee;
-  }
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #ddb5ee;
+}
 
 .my-portrait {
   margin: 5px;
-  max-width: 100px;
+  max-width: 300px; 
+  height: auto; 
 }
+

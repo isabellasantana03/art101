@@ -13,25 +13,27 @@
     display: flex;
     flex-direction: column;
 }
+
+/* Common styles for text bubbles */
 .text {
     max-width: 60%;
     margin: 10px 0;
     padding: 10px;
     border-radius: 10px;
     word-wrap: break-word;
-    color: white;
+    color: black;
 }
 
 /* Grey Bubble */
-#output .text-left {
+.text-left {
     background-color: #4b4848;
     color: white; /* Ensure text is readable on dark background */
     align-self: flex-start; /* Align to the left */
 }
 
 /* Green Bubble */
-#output .text-right {
-    background-color: #90ee90;
+.text-right {
+    background-color: #51d751;
     color: black; /* Ensure text is readable on light background */
     align-self: flex-end; /* Align to the right */
 }
