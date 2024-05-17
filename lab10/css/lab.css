@@ -3,10 +3,9 @@
     margin-bottom: 10px;
     border: solid 1px #a386e6;
     background-color: #a386e6;
-  }
+}
 
-
-/*Light beige background*/
+/* Light beige background */
 #output {
     background-color: #ecead5;
     padding: 10px;
@@ -14,24 +13,26 @@
     display: flex;
     flex-direction: column;
 }
-
-.text  {
+.text {
     max-width: 60%;
     margin: 10px 0;
     padding: 10px;
     border-radius: 10px;
     word-wrap: break-word;
-    color: black;
-  }
+    color: white;
+}
 
-/*Grey Bubble*/
-.text-left{
+/* Grey Bubble */
+#output .text-left {
     background-color: #4b4848;
-    align-self: flex-start; /*Align to the left*/
+    color: white; /* Ensure text is readable on dark background */
+    align-self: flex-start; /* Align to the left */
 }
 
-/*Green Bubble*/
-.text-right{
+/* Green Bubble */
+#output .text-right {
     background-color: #90ee90;
-    align-self: flex-end; /*Align to the right*/
+    color: black; /* Ensure text is readable on light background */
+    align-self: flex-end; /* Align to the right */
 }
+
