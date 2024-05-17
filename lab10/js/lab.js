@@ -22,6 +22,10 @@ $(document).ready(function(){
         const newText = generateRandomText();
         const outputDivs = $("#output.text");
         const newClass = (outputDivs.length % 2 === 0) ? 'text-left' : 'text-right';
+
+         // Inline styles for debugging
+         const inlineStyle = (newClass === 'text-left') ? 'background-color: #4b4848; align-self: flex-start; color: white;' : 'background-color: #90ee90; align-self: flex-end; color: black;';
+        
         $("#output").append('<div class = "text ' + newClass + '"><p>' + newText + '</p></div>');
     });
 });
