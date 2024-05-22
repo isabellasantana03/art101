@@ -5,7 +5,7 @@ Date: May 20 2023 */
 //  $('#button').click(function() {
 //        const inputVal = $('#input').val();
 //        $('#output').text(`Hello, ${inputVal}! Your name has been entered.`);
- //   });
+//   });
 //});
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -25,16 +25,15 @@ document.addEventListener("DOMContentLoaded", function() {
             return "Hufflepuff";
         }
     }
-
-    document.getElementById("button").addEventListener("click", function() {
+    $('#button').click(function() {
+        // Clear the output div
+        $('#output').empty();
+        
         // Get the value of the input field
-        const name = document.getElementById("input").value;
+        const name = $('#input').val();
         // Run sortingHat and store the result
         const house = sortingHat(name);
         // Append a new styled paragraph to the output div
-        const outputDiv = document.getElementById("output");
-        const paragraph = document.createElement("p");
-        paragraph.textContent = "The Sorting Hat has sorted you into " + house;
-        outputDiv.appendChild(paragraph);
+        $('#output').append(`<p>The Sorting Hat has sorted you into ${house}</p>`);
     });
 });
