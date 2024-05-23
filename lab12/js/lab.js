@@ -1,30 +1,24 @@
-/*Author: Isabella Santana
-Date: May 20 2023 */
+/* Author: Isabella Santana
+   Date: May 20 2023 */
 
-//$(document).ready(function() {
-//  $('#button').click(function() {
-//        const inputVal = $('#input').val();
-//        $('#output').text(`Hello, ${inputVal}! Your name has been entered.`);
-//   });
-//});
-
-document.addEventListener("DOMContentLoaded", function() {
+   $(document).ready(function() {
     function sortingHat(str) {
         // Count the letters in the string
         const length = str.length;
         // Get the remainder with 4
         const mod = length % 4;
-        // Return the house based on the value of mod
+        // Return the house based on the value of mod along with a two-word description
         if (mod === 0) {
-            return "Gryffindor";
+            return "Gryffindor - Brave and Courageous";
         } else if (mod === 1) {
-            return "Ravenclaw";
+            return "Ravenclaw - Wise and Intelligent";
         } else if (mod === 2) {
-            return "Slytherin";
+            return "Slytherin - Ambitious and Cunning";
         } else {
-            return "Hufflepuff";
+            return "Hufflepuff - Loyal and Patient";
         }
     }
+
     $('#button').click(function() {
         // Clear the output div
         $('#output').empty();
