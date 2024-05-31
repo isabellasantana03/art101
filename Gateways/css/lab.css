@@ -1,0 +1,24 @@
+h1 {
+    color: #9e599e;
+    font-size: 200%;
+  }
+  
+  p {
+    font-family: "Times New Roman", Times, serif; 
+    text-indent: 20px;
+    margin-left: 10px;
+  }
+/* The period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #888;
+    background-color: #67c760;
+  }
+  
+  .my-portrait {
+    margin: 5px;
+    max-width: 300px; 
+    height: auto; 
+  }
+    
